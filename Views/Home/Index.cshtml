@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Sonjas Market";
+}
+
+<div class="select-container-main">
+        <div class="select-container-sub">
+        <div class="paintings">  
+           @Html.ActionLink("Paintings","AllPainting","Painting",null, new { @class = "my-paintings" })   
+        </div>
+        <div class="contact">
+             @Html.ActionLink("Contact","Artists","Artist",null, new { @class = "my-contact" })  
+        </div>
+    </div>
+    
+</div>
+

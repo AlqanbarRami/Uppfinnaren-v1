@@ -1,0 +1,27 @@
+﻿@model PaintingViewModel
+@{
+    ViewData["Title"] = "Sonjas Paintings";
+}
+    @foreach(var item in Model.Paintings)
+    {
+         <div class="container">
+    <div class = "painting-container">
+        <div class="image-div">
+            <img class="image" src="@item.Image" alt="Image"/>       
+         </div>
+        <div class="details"> 
+            <span class="artist-name"> @Model.ArtistName </span>
+            <div class="details-des">
+            <span><strong>Painting Number :</strong>  @item.PainingId</span>
+            <span><strong>Subject :</strong> @item.PaintingName</span>
+            <span><strong>Type :</strong> @item.PaintingType</span>
+            <span><strong>Size :</strong> @item.Length x @item.Width CM </span>
+            <span><strong>Drawing Year :</strong> @item.DrawingYear</span>
+            <span><strong>Price :</strong> @item.Price $</span>
+            </div>
+            
+        </div>
+    </div>
+           </div>
+    
+    }
